@@ -114,7 +114,7 @@ submitScore.addEventListener("click", function() {
     console.log(playerScore);
 
     function populateStorage () {
-        localStorage.setItem("player score", JSON.stringify(playerScore));
+        localStorage.setItem("playerScore", JSON.stringify(playerScore));
         localStorage.setItem("initials", JSON.stringify(scoreInitials));
     }
 
@@ -134,8 +134,8 @@ highscoresLink.addEventListener("click", function() {
 
     var scoreList = JSON.parse(localStorage.getItem("playerScore"));
     console.log(scoreList);
-    leaderboardInitials.append.textContent = scoreList.initials;
-    leaderboardScore.append.textContent = scoreList.highscore;
+    leaderboardInitials.textContent = scoreList.initials;
+    leaderboardScore.textContent = scoreList.highscores;
 
 })
 
