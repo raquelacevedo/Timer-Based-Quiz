@@ -5,7 +5,7 @@ var questions = [
         answer: "array"
     },
     {
-        title: "Commonly used data typies DO NOT include:",
+        title: "Commonly used data types DO NOT include:",
         choices: ["strings", "booleans", "numbers", "alerts"],
         answer: "alerts"
     },
