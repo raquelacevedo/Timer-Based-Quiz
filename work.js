@@ -135,7 +135,7 @@ highscoresLink.addEventListener("click", function() {
     var scoreList = JSON.parse(localStorage.getItem("playerScore"));
     console.log(scoreList);
     leaderboardInitials.textContent = scoreList.initials;
-    leaderboardScore.textContent = scoreList.highscores;
+    leaderboardScore.textContent = scoreList.score;
 
 })
 
@@ -144,4 +144,4 @@ returnToQuiz.addEventListener("click", function () {
     returnToQuiz.classList.toggle("hide");
     quizLaunch.classList.toggle("hide");
     highscoresDisplay.classList.toggle("hide");
-})
+})  
